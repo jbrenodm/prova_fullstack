@@ -6,11 +6,6 @@
 Nesse desafio você receberá um curso EAD autoinstrucional para ser entregue a um de nossos clientes. O curso já passou por várias etapas de desenvolvimento, como o briefing, a roteirização do conteúdo, o design de interface e a diagramação com as linguagens HTML, CSS, BOOTSTRAP e JAVASCRIPT.</br>
 O projeto agora se encontra em seu estágio final e precisa ser entregue em até 6 dias. Portanto, precisamos das suas habilidades para deixá-lo mais dinâmico. Siga as instruções abaixo e planeje seu tempo com cuidado.<br /><br />
 
-**TEMPO PARA DESENVOLVIMENTO** <br />
-6 dias<br />
-Serão considerados apenas *commits* realizados até as 12h do dia 06/06/2022.<br /><br />
-
-
 **PREMISSAS TÉCNICAS**</br>
 Pode ser desenvolvido em Javascript (podem ser usados frameworks) ou PHP. (dica: utilize a linguagem que você mais domina! Não existem pesos diferentes entre elas na avaliação).<br /><br />
 
