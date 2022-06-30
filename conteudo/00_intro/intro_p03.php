@@ -19,8 +19,8 @@
                     Seus dados foram capturados por algum invasor. Instale componentes do treinamento para iniciar a restauração da segurança de seu dispositivo.
                   </div>
                 </div>
-                <div class="d-flex justify-content-center py-3"> <a href="intro_p04.php"
-                    class="btn btn__primary text-center animate__animated animate__bounceIn animate__delay-2s">CONTINUAR</a>
+                <div class="d-flex justify-content-center py-3">
+                  <a class="btn btn__primary text-center animate__animated animate__bounceIn animate__delay-2s" id="btnContinuarP03">CONTINUAR</a>
                 </div>
               </div>
             </div>
@@ -28,8 +28,19 @@
         </div>
       </section>
     </div>
-    
-    <?php include_once 'lib/footer.php'; ?> 
+    <div id="frmDadoUsuario"></div>    
+    <?php include_once '../../lib/footer.php'; ?> 
+
+    <script>
+      $(document).ready(function () {
+        var nomeUsuario = '<?php echo $_POST['nomeUsuario'];?>';      
+
+        $("#btnContinuarP03").click(function() {
+          $("#frmDadoUsuario").html(getFrmNomeUsuario(nomeUsuario, "intro_p04.php"));
+          $("#frmNomeUsuario").submit();
+        });
+      });
+    </script>
   </body>
 
 </html>

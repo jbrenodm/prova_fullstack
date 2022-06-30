@@ -42,7 +42,7 @@
     --color-danger: #cf222e;
     --typewriter-speed: 6s;
     --typewriter-steps: 25;
-    --img-link: url(../../img/external_link.png);
+    --img-link: url(../img/external_link.png);
 }
 
 html {
