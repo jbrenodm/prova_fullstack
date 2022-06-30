@@ -1,5 +1,13 @@
-/**************  Text Typing ********************/
 
+
+// function MascaraData(data){
+//     if(mascaraInteiro(data)==false){
+//             event.returnValue = false;
+//     }       
+//     return formataCampo(data, '00/00/0000', event);
+// }
+
+/**************  Text Typing ********************/
 function setTypingIntro() {
     const title = '#title1'
     const text1 = '#text1'
@@ -79,18 +87,22 @@ function setTypingIntro() {
 function showBtnLonger() {
     let tagId = document.querySelector('#showBtnLonger')
 
-    tagId.classList.remove('visually-hidden')
+    // tagId.classList.remove('visually-hidden')
+    // tagId.classList.remove('d-none')
+
     tagId.classList.add('animate__animated', 'animate__bounceIn')
 }
+
+
 setTimeout(showBtnLonger, 13000)
 
-function showBtn() {
-    let tagId = document.querySelector('#showBtn')
+// function showBtn() {
+//     let tagId = document.querySelector('#showBtn')
 
-    tagId.classList.remove('visually-hidden')
-    tagId.classList.add('animate__animated', 'animate__bounceIn')
-}
-setTimeout(showBtn, 3000)
+//     tagId.classList.remove('visually-hidden')
+//     tagId.classList.add('animate__animated', 'animate__bounceIn')
+// }
+// setTimeout(showBtn, 3000)
 
 //Menu Slide
 /* let btnMenu = document.querySelector('#overlay-input')
@@ -122,13 +134,19 @@ function showMe(box) {
 }
 
 // Janela Loading
-function continuar() {
-    document.querySelector("#continuar").classList.remove('disabled')
-    document.querySelector('#textoSeguranca').innerHTML = `
+function continuar(delay) {
+    // document.querySelector("#continuar").classList.remove('disabled')
+    setTimeout(document.querySelector('#textoSeguranca').innerHTML = `
     <p><strong>Inicializando treinamento em Segurança da Informação v.2.021</strong><br><span class="text-info">Instalação completa.</span></p>
-    `
+    `, delay)
 }
-setTimeout(continuar, 8000)
+
+
+
+
+
+// setTimeout(continuar, 8000)
+
 const infoData = ["Segurança da Informação.", "Boatos.", "Golpes.", "Ataques na Internet.", "Malwares.", "Privacidade.", "Redes Sociais.", "Mecanismos de Segurança."]
 
 /* const infoData = [
@@ -140,51 +158,51 @@ const infoData = ["Segurança da Informação.", "Boatos.", "Golpes.", "Ataques 
 // document.querySelector('#cursos').innerText = `${infoData[0]}`
 let course = document.querySelector('#cursos')
 
-setTimeout(courseName0, 0)
-setTimeout(courseName1, 1000)
-setTimeout(courseName2, 2000)
-setTimeout(courseName3, 3000)
-setTimeout(courseName4, 4000)
-setTimeout(courseName5, 5000)
-setTimeout(courseName6, 6000)
-setTimeout(courseName7, 7000)
+// setTimeout(courseName0, 0)
+// setTimeout(courseName1, 1000)
+// setTimeout(courseName2, 2000)
+// setTimeout(courseName3, 3000)
+// setTimeout(courseName4, 4000)
+// setTimeout(courseName5, 5000)
+// setTimeout(courseName6, 6000)
+// setTimeout(courseName7, 7000)
 
-function courseName0() {
-    course.innerHTML = `${infoData[0]}`
-}
+// function courseName0() {
+//     course.innerHTML = `${infoData[0]}`
+// }
 
-function courseName1() {
-    course.innerHTML = `${infoData[1]}`
+// function courseName1() {
+//     course.innerHTML = `${infoData[1]}`
 
     /* for (let i = 0; i < infoData.length; i++) {
         name += infoData[i]
         course.innerHTML = name
     } */
-}
+// }
 
-function courseName2() {
-    course.innerHTML = `${infoData[2]}`
-}
+// function courseName2() {
+//     course.innerHTML = `${infoData[2]}`
+// }
 
-function courseName3() {
-    course.innerHTML = `${infoData[3]}`
-}
+// function courseName3() {
+//     course.innerHTML = `${infoData[3]}`
+// }
 
-function courseName4() {
-    course.innerHTML = `${infoData[4]}`
-}
+// function courseName4() {
+//     course.innerHTML = `${infoData[4]}`
+// }
 
-function courseName5() {
-    course.innerHTML = `${infoData[5]}`
-}
+// function courseName5() {
+//     course.innerHTML = `${infoData[5]}`
+// }
 
-function courseName6() {
-    course.innerHTML = `${infoData[6]}`
-}
+// function courseName6() {
+//     course.innerHTML = `${infoData[6]}`
+// }
 
-function courseName7() {
-    course.innerHTML = `${infoData[7]}`
-}
+// function courseName7() {
+//     course.innerHTML = `${infoData[7]}`
+// }
 
 /* window.onload = function cursos(cursos) {
     return document.querySelector('#cursos').innerHTML = `

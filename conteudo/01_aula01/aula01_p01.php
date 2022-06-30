@@ -1,21 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Segurança da Informação</title>
-    <link rel="icon" href="../../img/favicon.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="../../css/style.css">
-</head>
+    <head><?php include_once '../../lib/head.php'; ?></head>
 
-<body class="bg-aulas">
-
-    <div class="container-fluid px-0">
+    <body class="bg-aulas">
+        <div class="container-fluid px-0">
+            
         <section id="nav">
             <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark vw-100">
                 <div class="container-md">
@@ -30,9 +19,9 @@
                             <label for="overlay-input" id="overlay-button"><span></span></label>
                             <div id="overlay">
                                 <ul>
-                                    <li><a href="../../index.html">Início</a></li>
-                                    <li><a href="aula01_p01.html">Aula 01</a></li>
-                                    <li><a href="../03_quiz/quiz.html" role="button" class="btn btn__link">Quiz</a></li>
+                                    <li><a href="../../index.php">Início</a></li>
+                                    <li><a href="aula01_p01.php">Aula 01</a></li>
+                                    <li><a href="../03_quiz/quiz.php" role="button" class="btn btn__link">Quiz</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -41,9 +30,11 @@
                 </div>
             </nav>
         </section>
+
         <div class="container top-80">
             <div class="aulas aulas-md">
-                <section id="aula01-01">
+                
+                <section id="aula01-01">                    
                     <div class="row">
                         <div class="col-12 mt-5 mb-3 fit-height">
                             <div class="table__border">
@@ -68,28 +59,30 @@
                             <h2>Segurança da <span class="no-wrap">informação 101</span></h2>
                         </div>
                         <div class="col-12 mb-5 fit-height">
-                            <h4><strong><span class="color__light-purple">{Usuário}</span></strong>, vamos começar pelo
-                                básico._</h4>
+                            <!-- AQUI -->
+                            <h4><strong><span class="color__light-purple">{Usuário}</span></strong>, vamos começar pelo básico._</h4>
                             <div class="border-left">
-                                <p>O avanço tecnológico facilita e melhora nossas vidas de inúmeras maneiras. Mas ele
-                                    também
-                                    nos deixa
-                                    mais vulneráveis às ameaças encontradas na internet, que estão crescendo de forma
-                                    assustadora. </p>
-                                <p>Veja a seguir alguns exemplos de como esses ataques estão cada vez mais frequentes.
+                                <p>
+                                    O avanço tecnológico facilita e melhora nossas vidas de inúmeras maneiras. 
+                                    Mas ele também nos deixa mais vulneráveis às ameaças encontradas na internet, que estão crescendo de forma assustadora. 
+                                </p>
+                                <p>
+                                    Veja a seguir alguns exemplos de como esses ataques estão cada vez mais frequentes.
                                 </p>
                             </div>
                         </div>
                     </div>
                 </section>
+
                 <section id="carousel">
                     <div class="row">
-                        <div class="col-2 d-flex align-items-center justify-content-center"><a href="#" type="button"
-                                data-bs-target="#carouselCaptions" data-bs-slide="prev" id="btnPrev"><img
-                                    src="../../img/seta_esquerda_ativa.png" alt="Anterior" class="img-fluid"></a></div>
+                        <div class="col-2 d-flex align-items-center justify-content-center">
+                            <a href="#" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev" id="btnPrev">
+                                <img src="../../img/seta_esquerda_ativa.png" alt="Anterior" class="img-fluid">
+                            </a>
+                        </div>
                         <div class="col-8">
-                            <div id="carouselCaptions" class="carousel slide m-auto" data-bs-ride="carousel"
-                                data-bs-interval="false">
+                            <div id="carouselCaptions" class="carousel slide m-auto" data-bs-ride="carousel" data-bs-interval="false">
                                 <div class="d-md-block">
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
@@ -103,7 +96,8 @@
                                         <div class="carousel-item">
                                             <div class="carousel-caption d-flex align-items-center">
                                                 <div class="d-md-block">
-                                                    <p>O <strong>Ministério da Economia</strong> sofreu um ataque
+                                                    <p>
+                                                        O <strong>Ministério da Economia</strong> sofreu um ataque
                                                         hacker. O
                                                         alvo foi a rede interna da
                                                         Secretaria do Tesouro Nacional, que foi infectada com um
@@ -265,182 +259,179 @@
             </div>
         </div>
 
-        <div class="container">
-            <div class="aulas aulas-md">
-                <section id="aula01-02">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="embed-container animate__animated animate__fadeIn">
-                                <iframe
-                                    src="https://player.vimeo.com/video/589907288?h=d6c636a27f&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                                    frameborder="0" allow="autoplay;  picture-in-picture" allowfullscreen
-                                    title="Teaser Trilha de Transformação Digital V1"> </iframe>
-                            </div>
-                            <div class="col-12 py-5 px-2">
-                                <p class="mb-4 animate__animated animate__fadeIn animate__delay-2s">Aperte <kbd
-                                        class="text-danger">[c]</kbd> para continuar
-                                    ou clique no botão abaixo._</p>
-                                <div class="col-12 py-2 visually-hidden" id="showBtn"> <a
-                                        href="../01_aula01/aula01_p01.html"
-                                        class="btn btn__primary text-center cyberpunk glitched">CONTINUAR</a>
+            <div class="container">
+                <div class="aulas aulas-md">
+                    <section id="aula01-02">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="embed-container animate__animated animate__fadeIn">
+                                    <iframe
+                                        src="https://player.vimeo.com/video/589907288?h=d6c636a27f&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                                        frameborder="0" allow="autoplay;  picture-in-picture" allowfullscreen
+                                        title="Teaser Trilha de Transformação Digital V1"> </iframe>
+                                </div>
+                                <div class="col-12 py-5 px-2">
+                                    <p class="mb-4 animate__animated animate__fadeIn animate__delay-2s">Aperte <kbd
+                                            class="text-danger">[c]</kbd> para continuar
+                                        ou clique no botão abaixo._</p>
+                                    <div class="col-12 py-2 visually-hidden" id="showBtn"> <a
+                                            href="../01_aula01/aula01_p01.php"
+                                            class="btn btn__primary text-center cyberpunk glitched">CONTINUAR</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-
-        <div class="container-fluid bg-color__white">
-            <section id="aula01-03" class="d-flex justify-content-center">
-                <div class="row text-dark p-5">
-                    <div class="col-md-6 d-flex align-items-center justify-content-center">
-                        <div class="d-md-block">
-                            <figure><img src="../../img/img01_aula01.png" class="img-fluid" width="471" height="676"
-                                    alt="Figura" /></figure>
-                        </div>
-                    </div>
-                    <div class="col-md-6 d-flex align-items-center">
-                        <div class="d-md-block w-70">
-                            <h5>Seu primeiro passo é saber que não está seguro.</h5>
-                            <p>Um problema muito comum é você achar que não corre riscos ao navegar na internet, ao
-                                supor que nenhum criminoso terá interesse em utilizar seus dispositivos, ou que
-                                ninguém irá identificar seus equipamentos em meio a tantos outros.</p>
-                            <p> Pois é exatamente esse sentimento que atrai os atacantes, já que os usuários acabam
-                                não adotando as medidas de prevenção necessárias para uma navegação segura.</p>
-                            <h5>A ilusão de segurança costuma terminar quando os primeiros problemas começam a
-                                acontecer. </h5>
-                            <p>Muitas vezes, os atacantes estão interessados em acessar grandes quantidades de
-                                computadores, independentemente de quais são. Para isto, podem efetuar varreduras na
-                                rede e localizar computadores conectados à Internet. </p>
-                            <p>Inclusive o seu, <span class="color__light-purple">{Usuário}</span>. (; </p>
-                            <h5>Você não vai querer que isso aconteça com você. </h5>
-                            <p>Um problema de segurança em seu computador pode torná-lo indisponível e colocar em
-                                risco os dados armazenados. Além disso, ao ser comprometido, seu computador também
-                                pode ser usado para atividades maliciosas como, por exemplo, servir de repositório
-                                para dados fraudulentos, lançar ataques contra outros computadores (e, assim,
-                                esconder a real identidade e localização do atacante), propagar códigos maliciosos e
-                                disseminar spam. </p>
-                        </div>
-                    </div>
+                    </section>
                 </div>
-            </section>
-        </div>
-
-        <div class="container">
-            <div class="aulas-md">
-                <section id="aula01-04">
-                    <div class="row">
-                        <div class="col-12">
-                            <h4>Os principais riscos</h4>
-                            <p>Dentre os riscos mais comuns que você pode se deparar ao navegar na internet, o Centro de
-                                Estudos, Resposta e Tratamento de Incidentes de Segurança no Brasil (CERT.br) destaca:
-                            </p>
-                            <p class="color__light-purple">Clique no baralho de cartas para revelar seus conteúdos. </p>
-                        </div>
-
-
-                        <div class="d-md-flex my-5">
-                            <div class="col-md-4">
-                                <div class="row">
-                                    <div class="col-12 d-flex justify-content-center">
-                                        <a type="button" onclick="baralhoCards()">
-                                            <figure class="m-3"><img src="../../img/baralho_active.png" alt="Baralho">
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="col-12  d-flex justify-content-center">
-                                        <div id="baralhoMiniCards">
-                                            <figure class="m-3"><img src="../../img/carta_numeros_disabled.png"
-                                                    alt="Baralhos"></figure>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-8 d-flex justify-content-start position-relative">
-                                <div class="baralho__texto visually-hidden" id="baralhoCard">
-
-                                </div>
-                                <figure class="m-3"><img src="../../img/baralho_carta.png" class="img-fluid"
-                                        alt="Texto no baralho">
-                                </figure>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </section>
-                <section id="mouse">
-                    <div class="row">
-                        <div class="col-12 my-5 d-flex justify-content-center">
-                            <div class="mouse text-center">
-                                <!-- -->
-                                <div class="arrow-down">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 text-center color__grey mb-5"> <small>Role para baixo</small> </div>
-                    </div>
-                </section>
             </div>
-        </div>
 
-        <div class="container">
-            <div class="aulas-md">
-                <section id="aula01-04">
-                    <div class="row">
-                        <div class="col-12 d-md-block">
-                            <h4>O que é feito online gera consequências na vida real</h4>
-                            <p>O primeiro passo para se prevenir dos riscos relacionados ao uso da internet é estar
-                                ciente
-                                de que eles não são “virtuais”. Tudo o que ocorre ou é realizado por meio da internet é
-                                real: os dados, as empresas e pessoas com quem você interage são as mesmas que estão
-                                fora
-                                dela.</p>
-                            <p>Os riscos aos quais você está exposto ao usá-la são os mesmos presentes no seu dia a dia
-                                e os
-                                golpes que são aplicados por meio dela são similares àqueles que ocorrem na rua ou por
-                                telefone. </p>
-                            <h4>Se cada um fizer sua parte, a internet vai se tornar um ambiente mais seguro para todos.
-                            </h4>
-                            <p>Para tentar reduzir os riscos e se proteger, você deve adotar uma postura preventiva e
-                                incorporar a atenção com a segurança à sua rotina, independentemente do local,
-                                tecnologia ou
-                                meio utilizado. </p>
+            <div class="container-fluid bg-color__white">
+                <section id="aula01-03" class="d-flex justify-content-center">
+                    <div class="row text-dark p-5">
+                        <div class="col-md-6 d-flex align-items-center justify-content-center">
+                            <div class="d-md-block">
+                                <figure><img src="../../img/img01_aula01.png" class="img-fluid" width="471" height="676"
+                                        alt="Figura" /></figure>
+                            </div>
                         </div>
-                        <div class="col-12 d-flex justify-content-center my-5">
-                            <div class="card card__intro card__border animate__animated animate__zoomIn" id="box1">
-                                <div class="card-header card__header"> (1) MENSAGEM DO SISTEMA </div>
-                                <div class="card-body">
-                                    <div class="d-flex align-items-center">
-                                        <div class="flex-shrink-0 px-3"> <img src="../../img/icon_baralho.png"
-                                                alt="Ícone baralho" class="animate__animated animate__bounce img-fluid">
-                                        </div>
-                                        <div class="flex-grow-1 ms-3 card__text">
-                                            <p class="color__cyan"><strong>Bom
-                                                    começo, {Usuário}!</strong></p>
-                                            <p>Você conquistou o certificado “Segurança da informação 101”. No próximo
-                                                módulo, vamos falar sobre uma das questões mais graves e complexas da
-                                                sociedade atual. Um problema que eu e você temos nossa parcela de
-                                                responsabilidade. </p>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex justify-content-center py-3"> <a
-                                            href="../03_quiz/quiz.html"
-                                            class="btn btn__primary text-center animate__animated animate__bounceIn">IR
-                                            PARA O QUIZ</a></div>
-                                </div>
+                        <div class="col-md-6 d-flex align-items-center">
+                            <div class="d-md-block w-70">
+                                <h5>Seu primeiro passo é saber que não está seguro.</h5>
+                                <p>Um problema muito comum é você achar que não corre riscos ao navegar na internet, ao
+                                    supor que nenhum criminoso terá interesse em utilizar seus dispositivos, ou que
+                                    ninguém irá identificar seus equipamentos em meio a tantos outros.</p>
+                                <p> Pois é exatamente esse sentimento que atrai os atacantes, já que os usuários acabam
+                                    não adotando as medidas de prevenção necessárias para uma navegação segura.</p>
+                                <h5>A ilusão de segurança costuma terminar quando os primeiros problemas começam a
+                                    acontecer. </h5>
+                                <p>Muitas vezes, os atacantes estão interessados em acessar grandes quantidades de
+                                    computadores, independentemente de quais são. Para isto, podem efetuar varreduras na
+                                    rede e localizar computadores conectados à Internet. </p>
+                                <p>Inclusive o seu, <span class="color__light-purple">{Usuário}</span>. (; </p>
+                                <h5>Você não vai querer que isso aconteça com você. </h5>
+                                <p>Um problema de segurança em seu computador pode torná-lo indisponível e colocar em
+                                    risco os dados armazenados. Além disso, ao ser comprometido, seu computador também
+                                    pode ser usado para atividades maliciosas como, por exemplo, servir de repositório
+                                    para dados fraudulentos, lançar ataques contra outros computadores (e, assim,
+                                    esconder a real identidade e localização do atacante), propagar códigos maliciosos e
+                                    disseminar spam. </p>
                             </div>
                         </div>
                     </div>
                 </section>
             </div>
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-            </script>
-        <script type="text/javascript" src="../../js/script.js"></script>
 
-</body>
+            <div class="container">
+                <div class="aulas-md">
+                    <section id="aula01-04">
+                        <div class="row">
+                            <div class="col-12">
+                                <h4>Os principais riscos</h4>
+                                <p>Dentre os riscos mais comuns que você pode se deparar ao navegar na internet, o Centro de
+                                    Estudos, Resposta e Tratamento de Incidentes de Segurança no Brasil (CERT.br) destaca:
+                                </p>
+                                <p class="color__light-purple">Clique no baralho de cartas para revelar seus conteúdos. </p>
+                            </div>
+
+
+                            <div class="d-md-flex my-5">
+                                <div class="col-md-4">
+                                    <div class="row">
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <a type="button" onclick="baralhoCards()">
+                                                <figure class="m-3"><img src="../../img/baralho_active.png" alt="Baralho">
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="col-12  d-flex justify-content-center">
+                                            <div id="baralhoMiniCards">
+                                                <figure class="m-3"><img src="../../img/carta_numeros_disabled.png"
+                                                        alt="Baralhos"></figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 d-flex justify-content-start position-relative">
+                                    <div class="baralho__texto visually-hidden" id="baralhoCard">
+
+                                    </div>
+                                    <figure class="m-3"><img src="../../img/baralho_carta.png" class="img-fluid"
+                                            alt="Texto no baralho">
+                                    </figure>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </section>
+                    <section id="mouse">
+                        <div class="row">
+                            <div class="col-12 my-5 d-flex justify-content-center">
+                                <div class="mouse text-center">
+                                    <!-- -->
+                                    <div class="arrow-down">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center color__grey mb-5"> <small>Role para baixo</small> </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="aulas-md">
+                    <section id="aula01-04">
+                        <div class="row">
+                            <div class="col-12 d-md-block">
+                                <h4>O que é feito online gera consequências na vida real</h4>
+                                <p>O primeiro passo para se prevenir dos riscos relacionados ao uso da internet é estar
+                                    ciente
+                                    de que eles não são “virtuais”. Tudo o que ocorre ou é realizado por meio da internet é
+                                    real: os dados, as empresas e pessoas com quem você interage são as mesmas que estão
+                                    fora
+                                    dela.</p>
+                                <p>Os riscos aos quais você está exposto ao usá-la são os mesmos presentes no seu dia a dia
+                                    e os
+                                    golpes que são aplicados por meio dela são similares àqueles que ocorrem na rua ou por
+                                    telefone. </p>
+                                <h4>Se cada um fizer sua parte, a internet vai se tornar um ambiente mais seguro para todos.
+                                </h4>
+                                <p>Para tentar reduzir os riscos e se proteger, você deve adotar uma postura preventiva e
+                                    incorporar a atenção com a segurança à sua rotina, independentemente do local,
+                                    tecnologia ou
+                                    meio utilizado. </p>
+                            </div>
+                            <div class="col-12 d-flex justify-content-center my-5">
+                                <div class="card card__intro card__border animate__animated animate__zoomIn" id="box1">
+                                    <div class="card-header card__header"> (1) MENSAGEM DO SISTEMA </div>
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0 px-3"> <img src="../../img/icon_baralho.png"
+                                                    alt="Ícone baralho" class="animate__animated animate__bounce img-fluid">
+                                            </div>
+                                            <div class="flex-grow-1 ms-3 card__text">
+                                                <p class="color__cyan"><strong>Bom
+                                                        começo, {Usuário}!</strong></p>
+                                                <p>Você conquistou o certificado “Segurança da informação 101”. No próximo
+                                                    módulo, vamos falar sobre uma das questões mais graves e complexas da
+                                                    sociedade atual. Um problema que eu e você temos nossa parcela de
+                                                    responsabilidade. </p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center py-3"> <a
+                                                href="../03_quiz/quiz.php"
+                                                class="btn btn__primary text-center animate__animated animate__bounceIn">IR
+                                                PARA O QUIZ</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <?php include_once 'lib/footer.php'; ?> 
+
+    </body>
 
 </html>
