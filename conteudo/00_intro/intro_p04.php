@@ -30,7 +30,7 @@
                   </div>
                   <div class="d-flex justify-content-center py-3">
                     <a href="intro_p02.php" class="btn btn__primary text-center cyberpunk glitched me-5">VOLTAR</a>
-                    <a class="btn btn__primary text-center cyberpunk glitched disabled" id="btnContinuarP04">CONTINUAR</a>
+                    <a href="../01_aula01/aula01_p01.php" class="btn btn__primary text-center cyberpunk glitched disabled" id="btnContinuarP04">CONTINUAR</a>
                   </div>
                 </div>
               </div>
@@ -38,7 +38,6 @@
           </div>
         </section>        
       </div>
-      <div id="frmDadoUsuario"></div>
       <?php include_once '../../lib/footer.php'; ?> 
 
       <script>
@@ -53,12 +52,6 @@
               <p><strong>Inicializando treinamento em Segurança da Informação v.2.021</strong><br><span class="text-info">Instalação completa.</span></p>
               `
           }
-
-          var nomeUsuario = '<?php echo $_POST['nomeUsuario'];?>';      
-          $("#btnContinuarP04").click(function() {
-            $("#frmDadoUsuario").html(getFrmNomeUsuario(nomeUsuario, "../01_aula01/aula01_p01.php"));
-            $("#frmNomeUsuario").submit();
-          });
         });        
       </script>
     </body>

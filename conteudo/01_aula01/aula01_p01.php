@@ -1,9 +1,10 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="pt_BR">
     <head>
         <?php 
             include_once '../../lib/head.php';
-            $nomeCurto = (explode(" ", $_POST['nomeUsuario']));
+            $nomeCurto = (explode(" ", $_SESSION['nomeUsuario']));
             $nomeCurto = $nomeCurto[0]." ".$nomeCurto[count($nomeCurto) - 1];
         ?>
     </head>
@@ -14,13 +15,13 @@
         <section id="nav">
             <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark vw-100">
                 <div class="container-md">
-                    <div class="row vw-100 pe-4">
+                    <div class="row vw-100 pe-4 justify-content-between">
                         <div class="col-7 d-flex align-items-center">
                             <h4 class="title title__effect ms-4">Segurança <span class="no-wrap">da Informação</span>
                             </h4>
                         </div>
                         <!--MENU-->
-                        <div class="col-2 d-flex align-items-center">
+                        <div class="col-2 d-flex">
                             <input type="checkbox" name="c1" id="overlay-input" />
                             <label for="overlay-input" id="overlay-button"><span></span></label>
                             <div id="overlay">
@@ -81,18 +82,18 @@
                 </section>
 
                 <section id="carousel">
-                    <div class="row">
+                    <div class="row ">
                         <div class="col-2 d-flex align-items-center justify-content-center">
                             <a href="#" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev" id="btnPrev">
-                                <img src="../../img/seta_esquerda_ativa.png" alt="Anterior" class="img-fluid">
+                                <img id="imgBtnPrev" src="../../img/seta_esquerda_ativa.png" alt="Anterior" class="img-fluid">
                             </a>
                         </div>
                         <div class="col-8">
                             <div id="carouselCaptions" class="carousel slide m-auto" data-bs-ride="carousel" data-bs-interval="false">
-                                <div class="d-md-block">
+                                <div class="center-block">
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
-                                            <div class="carousel-caption d-flex align-items-center text-center">
+                                            <div class="carousel-caption d-flex  text-center">
                                                 <div class="d-md-block">
                                                     <h5>CENTRAL DE NOTÍCIAS</h5>
                                                     <p>Atualizado em Setembro de 2021</p>
@@ -182,22 +183,25 @@
                                         </div>
                                     </div>
                                     <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                        <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                        <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                        <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                        <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                                        <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                                        <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                        <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" disabled></button>
+                                        <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2" disabled></button>
+                                        <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3" disabled></button>
+                                        <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="3" aria-label="Slide 4" disabled></button>
+                                        <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="4" aria-label="Slide 5" disabled></button>
+                                        <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="5" aria-label="Slide 6" disabled></button>
+                                        <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="6" aria-label="Slide 7" disabled></button>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-2 d-flex align-items-center justify-content-center"><a href="#" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next" id="btnNext">
-                            <img src="../../img/seta_direita_ativa.png" alt="Próximo" class="img-fluid"></a>
+                        </div>                        
+                        <div class="col-2 d-flex align-items-center justify-content-center">
+                            <a href="#" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next" id="btnNext">
+                            <img id="imgBtnNext" src="../../img/seta_direita_ativa.png" alt="Próximo" class="img-fluid"></a>
                         </div>
                     </div>
                 </section>
+                <!-- FIM DO CARROUSEL -->
+
                 <section id="mouse">
                     <div class="row">
                         <div class="col-12 my-5 d-flex justify-content-center">
@@ -211,13 +215,14 @@
                         <div class="col-12 text-center color__grey mb-5"> <small>Role para baixo</small> </div>
                     </div>
                 </section>
+
             </div>
         </div>
 
             <div class="container">
                 <div class="aulas aulas-md">
-                    <section id="aula01-02">
-                        <div class="row">
+                    <section>
+                        <div id="aula01-02" class="row">
                             <div class="col-12">
                                 <div class="embed-container animate__animated animate__fadeIn">
                                     <iframe
@@ -239,8 +244,8 @@
             </div>
 
             <div class="container-fluid bg-color__white">
-                <section id="aula01-03" class="d-flex justify-content-center">
-                    <div class="row text-dark p-5">
+                <section class="d-flex justify-content-center">
+                    <div id="aula01-03" class="row text-dark p-5">
                         <div class="col-md-6 d-flex align-items-center justify-content-center">
                             <div class="d-md-block">
                                 <figure><img src="../../img/img01_aula01.png" class="img-fluid" width="471" height="676" alt="Figura" /></figure>
@@ -281,8 +286,8 @@
 
             <div class="container">
                 <div class="aulas-md">
-                    <section id="aula01-04">
-                        <div class="row">
+                    <section>
+                        <div id="aula01-04" class="row">
                             <div class="col-12">
                                 <h4>Os principais riscos</h4>
                                 <p>
@@ -318,7 +323,7 @@
                         </div>
                     </section>
                     
-                    <section id="mouse">
+                    <section id="mouse2">
                         <div class="row">
                             <div class="col-12 my-5 d-flex justify-content-center">
                                 <div class="mouse text-center">
@@ -332,10 +337,10 @@
                 </div>
             </div>
 
-            <div class="container">
+            <div  class="container">
                 <div class="aulas-md">
-                    <section id="aula01-04">
-                        <div class="row">
+                    <section>
+                        <div id="aula01-05" class="row">
                             <div class="col-12 d-md-block">
                                 <h4>O que é feito online gera consequências na vida real</h4>
                                 <p>
@@ -371,7 +376,7 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="d-flex justify-content-center py-3">
+                                        <div id="03_quiz" class="d-flex justify-content-center py-3">
                                             <a href="../03_quiz/quiz.php" class="btn btn__primary text-center animate__animated animate__bounceIn">IR PARA O QUIZ</a>
                                         </div>
                                     </div>
@@ -380,8 +385,71 @@
                         </div>
                     </section>
                 </div>
+                <br><br>
             </div>
             <?php include_once '../../lib/footer.php'; ?> 
+            <script src="https://player.vimeo.com/api/player.js"></script>
+            <script>
+                $(document).ready(function () {
+
+                    // PAREI AQUI -> API DO VIMEO | IMPLEMENTAR USANDO OS EXEMPLOS ABAIXO
+                    // OBS: Lembrar de registrar na sessão até onde o usuário está para poder voltar até onde estava.
+                    var iframe = document.querySelector('iframe');
+                    var player = new Vimeo.Player(iframe);
+
+                    player.on('play', function() {
+                        alert('You have played the video')
+                    });
+                        player.on('ended', function(){
+                        alert('Video play completed');
+                    });
+                    
+                    player.getVideoTitle().then(function(title) {
+                        console.log('title:', title);
+                    });
+
+                    // FIM DO EXEMPLO DA API
+                    
+                    if($("button[data-bs-slide-to='0']").hasClass("active")){
+                        // $("#imgBtnPrev").prop('disabled', true);
+                        $("#imgBtnPrev").hide();
+                        $("#mouse").hide();
+                        $("#mouse2").hide();
+                        $("#aula01-02").hide();
+                        $("#aula01-03").hide();
+                        $("#aula01-04").hide();
+                        $("#aula01-05").hide();
+                    }                   
+
+                    $("#imgBtnPrev").click(function (e) {
+                        e.stopPropagation();
+                        e.preventDefault();
+
+                        $("#imgBtnNext").show();
+                        if($("button[data-bs-slide-to='0']").hasClass("active")){                            
+                            $("#imgBtnPrev").hide()
+                        }else{
+                            $("#imgBtnPrev").show()
+                        }                       
+                    });
+
+                    $("#imgBtnNext").click(function (e) {
+                        e.stopPropagation();
+                        e.preventDefault();
+                                
+                        $("#imgBtnPrev").show();
+                        if($("button[data-bs-slide-to='6']").hasClass("active")){
+                            $("#imgBtnNext").hide();
+                            $("#mouse").show();
+                            $("#aula01-02").show();
+                            $("#mouse").get(0).scrollIntoView();
+
+                        }else{
+                            $("#imgBtnNext").show();
+                        }
+                    });
+                });               
+            </script>
 
     </body>
 
