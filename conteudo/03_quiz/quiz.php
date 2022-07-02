@@ -9,7 +9,7 @@
         <section id="nav">
             <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark vw-100">
                 <div class="container-md">
-                    <div class="row vw-100 pe-4">
+                    <div class="row vw-100 pe-4 justify-content-between">
                         <div class="col-7 d-flex align-items-center">
                             <h4 class="title title__effect ms-4">Segurança <span class="no-wrap">da Informação</span>
                             </h4>
@@ -20,9 +20,9 @@
                             <!--MENU-->
                             <div id="overlay">
                                 <ul class="menu">
-                                    <li><a href="../../index.html">Início</a></li>
-                                    <li><a href="aula01_p01.html">Aula 01</a></li>
-                                    <li><a href="../03_quiz/quiz.html" role="button" class="btn btn__link">Quiz</a></li>
+                                    <li><a href="../../index.php">Início</a></li>
+                                    <li><a href="../01_aula01/aula01_p01.php">Aula 01</a></li>
+                                    <li><a href="../03_quiz/quiz.php" role="button" class="btn btn__link">Quiz</a></li>
                                 </ul>
                             </div>
                             <!--FIM MENU-->

@@ -32,7 +32,7 @@
                                 <ul>
                                     <li><a href="../../index.php">Início</a></li>
                                     <li><a href="aula01_p01.php">Aula 01</a></li>
-                                    <li><a href="../03_quiz/quiz.php" role="button" class="btn btn__link">Quiz</a></li>
+                                    <li id="menuQuiz"><a href="../03_quiz/quiz.php" role="button" class="btn btn__link">Quiz</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -396,6 +396,8 @@
             <script>
                 $(document).ready(function () {
                     setUserNameSession();
+                    $("#menuQuiz").hide();
+                    
                     $(document).keypress(function(e) {
                         if(e.which == 67 || e.which == 99 && getEtapaConcluida("aula01-02") && !getEtapaConcluida("aula01-03")){
                             // console.log("Pressionou -> ", e.which);
@@ -472,14 +474,16 @@
                         $("#showBtn").removeClass("visually-hidden");
                     }
 
+                    // Etapa Quiz só está aparecendo apos recarregar a pagina
 
                     //  Etapa Baralho
                     if(!getEtapaConcluida("aula01-03")){
                         $("#aula01-03, #aula01-04").hide();                     
                     }else{
-                        console.log("Etapa 3 concluida");
                         $("#mouse2").show();
-                        $("#aula01-05").show();
+                        $("#aula01-05").show();                        
+                        $("mouse2").get(0).scrollIntoView();
+                        $("#menuQuiz").show();
                     }                  
 
                     // Etapa Quiz
