@@ -474,7 +474,6 @@
                         $("#showBtn").removeClass("visually-hidden");
                     }
 
-                    // Etapa Quiz só está aparecendo apos recarregar a pagina
 
                     //  Etapa Baralho
                     if(!getEtapaConcluida("aula01-03")){
@@ -482,7 +481,7 @@
                     }else{
                         $("#mouse2").show();
                         $("#aula01-05").show();                        
-                        $("mouse2").get(0).scrollIntoView();
+                        $("#mouse2").get(0).scrollIntoView();
                         $("#menuQuiz").show();
                     }                  
 
@@ -498,21 +497,7 @@
                     // if(!getEtapaConcluida("aula01-05")){
                     //     $("#aula01-05").hide();
                     // }                   
-                }); 
-               
-
-                
-                function setEtapaConcluida(pNomeEtapa, pStatus = true){
-                    return sessionStorage.setItem(pNomeEtapa, pStatus);
-                }
-
-                function getEtapaConcluida(pNomeEtapa){
-                    return sessionStorage.getItem(pNomeEtapa);
-                }
-
-                function setUserNameSession(){
-                    return sessionStorage.setItem("userName", "<?php echo $nomeCurto;?>");
-                }
+                });                 
             </script>
     </body>
 

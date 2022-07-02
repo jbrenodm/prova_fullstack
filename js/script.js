@@ -195,8 +195,24 @@ function baralhoCards() {
         `
         clickState=0;
         sessionStorage.setItem("aula01-03", true);
+        $("#mouse2").show();
+        $("#aula01-05").show();                        
+        $("#mouse2").get(0).scrollIntoView();
+        $("#menuQuiz").show();
     }
 
+}
+
+function setEtapaConcluida(pNomeEtapa, pStatus = true){
+    return sessionStorage.setItem(pNomeEtapa, pStatus);
+}
+
+function getEtapaConcluida(pNomeEtapa){
+    return sessionStorage.getItem(pNomeEtapa);
+}
+
+function setUserNameSession(){
+    return sessionStorage.setItem("userName", "<?php echo $nomeCurto;?>");
 }
 
 function getFrmNomeUsuario(pNomeUsuario, pAction) {
