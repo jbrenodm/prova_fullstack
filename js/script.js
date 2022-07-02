@@ -194,6 +194,7 @@ function baralhoCards() {
         <figure class="m-3"><img src="../../img/carta_numeros_8.png" alt="Baralhos"></figure>
         `
         clickState=0;
+        sessionStorage.setItem("aula01-03", true);
     }
 
 }

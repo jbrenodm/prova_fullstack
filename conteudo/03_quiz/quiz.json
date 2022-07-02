@@ -1,0 +1,41 @@
+{
+    "0": {
+        "shotType": "Check",
+        "type": "checkbox",
+        "id": "quiz01",
+        "number": "1",
+        "question": "<p>Pedro é um personal trainer. Recentemente, ele começou a construir sua presença digital, o que tem sido ótimo para seus negócios. O site de Pedro e suas redes ajudam os clientes a acharem seu serviço e também os orienta no agendamento das aulas, além de permitir que Pedro esteja conectado aos seus clientes e descubra novas possibilidades de criar os treinos. </p><p>Mas estar conectado pode trazer riscos de segurança. Pedro deveria se precaver em quais situações? </p> <p>Sinalize umas ou mais opções abaixo que estão de acordo com a questão.</p>",
+        "a": "a) Ao compartilhar o número de sua conta bancária.",
+        "b": "b) Ao compartilhar seus dados.",
+        "c": "c) Ao divulgar informações que possam comprometer sua reputação.",
+        "d": "d) Ao compartilhar dados de seus clientes.",
+        "answer": "todas",
+        "answerExplanation": "<h5>Resposta</h5> <p><strong>Todas as alternativas acima</strong></p> <p>Pedro deve proteger todas essas informações. Caso contrário, ele pode ter seus dados pessoais e as informações que ele coleta de seus clientes roubados, além de ter sua própria reputação manchada.</p>"
+    },
+    "1": {
+        "shotType": "Radio",
+        "type": "radio",
+        "id": "quiz02",
+        "number": "2",
+        "question": "<p>São riscos mais comuns que você pode se deparar ao navegar na internet, exceto: </p>",
+        "a": "a) Conteúdos impróprios e ofensivos.",
+        "b": "b) Furto de identidade.",
+        "c": "c) Invasão de privacidade.",
+        "d": "d) Pessoas bem-intencionadas.",
+        "answer": "d",
+        "answerExplanation": "<h5>Resposta</h5> <p><strong>d) Pessoas bem-intencionadas.</strong></p> <p>O contato com pessoas bem-intencionadas não é um risco. Mas não dá para saber, ao certo, as intenções das pessoas com quem você se relaciona em canais digitais. </p> <p>Com a falsa sensação de anonimato da internet, algumas pessoas se aproveitam para aplicar golpes, tentar se passar por outras pessoas e cometer crimes como, por exemplo, estelionato, pornografia infantil e sequestro. </p>"
+    },
+    "2": {
+        "shotType": "Radio",
+        "type": "radio",
+        "id": "quiz03",
+        "number": "3",
+        "question": "<p>O que é um boato? </p>",
+        "a": "a) É uma informação falsa ou distorcida, que chega a um grande número de pessoas.",
+        "b": "b) É um programa malicioso que infecta seu computador ou notebook.",
+        "c": "c) São dados oficiais de grandes veículos de comunicação.",
+        "d": "d) Golpes praticados por um atacante virtual.",
+        "answer": "a",
+        "answerExplanation": "<h5>Resposta</h5> <p><strong>a) É uma informação falsa ou distorcida, que chega a um grande número de pessoas.</strong></p>"
+     }
+}

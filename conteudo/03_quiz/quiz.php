@@ -57,177 +57,71 @@
                     </div>
                 </div>
             </section>
-            <section id="quiz01">
-                <div class="row">
-                    <div class="col-12 mb-3">
-                        <h2>1/12</h2>
-                    </div>
-                    <div class="col-12">
-                        <div class="d-md-block">
-                            <p>Pedro é um personal trainer. Recentemente, ele começou a construir sua presença digital,
-                                o que tem sido ótimo para seus negócios. O site de Pedro e suas redes ajudam os clientes
-                                a acharem seu serviço e também os orienta no agendamento das aulas, além de permitir que
-                                Pedro esteja conectado aos seus clientes e descubra novas possibilidades de criar os
-                                treinos. </p>
-                            <p>Mas estar conectado pode trazer riscos de segurança. Pedro deveria se precaver em quais
-                                situações?
-                            </p>
-                            <p>Sinalize umas ou mais opções abaixo que estão de acordo com a questão.</p>
-                        </div>
-                    </div>
-                    <div class="col-12 mt-4 quiz01 form-check-group">
-                        <div class="quiz01 form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheck1-1">
-                            <label class="form-check-label" for="flexCheck1-1">
-                                a) Ao compartilhar o número de sua conta bancária.
-                            </label>
-                        </div>
-                        <div class="quiz01 form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheck1-2">
-                            <label class="form-check-label" for="flexCheck1-2">
-                                b) Ao compartilhar seus dados.
-                            </label>
-                        </div>
-                        <div class="quiz01 form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheck1-3">
-                            <label class="form-check-label" for="flexCheck1-3">
-                                c) Ao divulgar informações que possam comprometer sua reputação.
-                            </label>
-                        </div>
-                        <div class="quiz01 form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheck1-4">
-                            <label class="form-check-label" for="flexCheck1-4">
-                                d) Ao compartilhar dados de seus clientes.
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-12 py-2 mt-4"> <a href="#"
-                            class="btn btn__disabled-form text-center cyberpunk glitched">CONFERIR</a>
-                    </div>
-                    <div class="col-sm-8">
-                        <h5>Resposta</h5>
-                        <p><strong>Todas as alternativas acima</strong></p>
-                        <p>Pedro deve proteger todas essas informações. Caso contrário, ele pode ter seus dados pessoais
-                            e as informações que ele coleta de seus clientes roubados, além de ter sua própria reputação
-                            manchada.</p>
-                    </div>
-                    <div class="col-sm-4 d-flex align-items-center justify-content-center"><a href="#" type="button"
-                            data-bs-target="#carouselCaptions" data-bs-slide="next" id="btnNext"><img
-                                src="../../img/seta_direita_ativa.png" alt="Próximo" class="img-fluid"></a>
-                    </div>
-                </div>
-            </section>
-
-            <section id="quiz02">
-                <div class="row">
-                    <div class="col-12 mb-3">
-                        <h2>2/12</h2>
-                    </div>
-                    <div class="col-12">
-                        <div class="d-md-block">
-                            <p>São riscos mais comuns que você pode se deparar ao navegar na internet, exceto: </p>
-                        </div>
-                    </div>
-                    <div class="col-12 mt-4">
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadio" id="flexRadio2-1">
-                            <label class="form-check-label" for="flexRadio2-1">
-                                a) Conteúdos impróprios e ofensivos.
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadio" id="flexRadio2-2">
-                            <label class="form-check-label" for="flexRadio2-2">
-                                b) Furto de identidade.
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadio" id="flexRadio2-3">
-                            <label class="form-check-label" for="flexRadio2-3">
-                                c) Invasão de privacidade.
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadio" id="flexRadio2-4">
-                            <label class="form-check-label" for="flexRadio2-4">
-                                d) Pessoas bem-intencionadas.
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-12 py-2 mt-4"> <a href="#"
-                            class="btn btn__disabled-form text-center cyberpunk glitched">CONFERIR</a>
-                    </div>
-                    <div class="col-sm-8">
-                        <h5>Resposta</h5>
-                        <p><strong>d) Pessoas bem-intencionadas.</strong></p>
-                        <p>O contato com pessoas bem-intencionadas não é um risco. Mas não dá para saber, ao certo, as
-                            intenções das pessoas com quem você se relaciona em canais digitais.
-                        </p>
-                        <p>Com a falsa sensação de anonimato da internet, algumas pessoas se aproveitam para aplicar
-                            golpes, tentar se passar por outras pessoas e cometer crimes como, por exemplo, estelionato,
-                            pornografia infantil e sequestro. </p>
-                    </div>
-                    <div class="col-sm-4 d-flex align-items-center justify-content-center"><a href="#" type="button"
-                            data-bs-target="#carouselCaptions" data-bs-slide="next" id="btnNext"><img
-                                src="../../img/seta_direita_ativa.png" alt="Próximo" class="img-fluid"></a>
-                    </div>
-                </div>
-            </section>
-
-            <section id="quiz03">
-                <div class="row">
-                    <div class="col-12 mb-3">
-                        <h2>3/12</h2>
-                    </div>
-                    <div class="col-12">
-                        <div class="d-md-block">
-                            <p>O que é um boato? </p>
-                        </div>
-                    </div>
-                    <div class="col-12 mt-4">
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadio" id="flexRadio3-1">
-                            <label class="form-check-label" for="flexRadio3-1">
-                                a) É uma informação falsa ou distorcida, que chega a um grande número de pessoas.
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadio" id="flexRadio3-2">
-                            <label class="form-check-label" for="flexRadio3-2">
-                                b) É um programa malicioso que infecta seu computador ou notebook.
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadio" id="flexRadio3-3">
-                            <label class="form-check-label" for="flexRadio3-3">
-                                c) São dados oficiais de grandes veículos de comunicação.
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadio" id="flexRadio3-4">
-                            <label class="form-check-label" for="flexRadio3-4">
-                                d) Golpes praticados por um atacante virtual.
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-12 py-2 mt-4"> <a href="#"
-                            class="btn btn__disabled-form text-center cyberpunk glitched">CONFERIR</a>
-                    </div>
-                    <div class="col-sm-8">
-                        <h5>Resposta</h5>
-                        <p><strong>a) É uma informação falsa ou distorcida, que chega a um grande número de
-                                pessoas.</strong></p>
-                    </div>
-                    <div class="col-sm-4 d-flex align-items-center justify-content-center"><a href="#" type="button"
-                            data-bs-target="#carouselCaptions" data-bs-slide="next" id="btnNext"><img
-                                src="../../img/seta_direita_ativa.png" alt="Próximo" class="img-fluid"></a>
-                    </div>
-                </div>
-            </section>
-
+            <div id="questions"></div>        
         </div>
     </div>
-    <?php include_once 'lib/footer.php'; ?> 
+    <?php include_once '../../lib/footer.php'; ?>
+    <script>
+        $(document).ready(function () {
+            $.getJSON('quiz.json', function(json) {
+                var html = ""; 
+                Object.keys(json).forEach(function(quiz){                    
+                    
+                    // console.log(json[quiz].question);                    
+
+                    html += `<section id="`+json[quiz].id+`">
+                                <div class="row">                
+                                    <div class="col-12 mb-3">
+                                        <h2>`+json[quiz].number+`/3</h2>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="d-md-block">`;
+                    html+=                  json[quiz].question;                      
+                    html+= `            </div>
+                                    </div>
+                                    <div class="col-12 mt-4 `+(json[quiz].type == "checkbox" ? json[quiz].id+" form-check-group" : "" )+`">
+                                        <div class="`+(json[quiz].type == "checkbox" ? json[quiz].id : "" )+` form-check">
+                                            <input class="form-check-input"  type="`+json[quiz].type+`" `+(json[quiz].type == "radio" ? 'name="flexRadio"' : 'value=""' )+`  id="flex`+json[quiz].shotType+`1-1">
+                                            <label class="form-check-label" for="flex`+json[quiz].shotType+`1-1">`;
+                    html+=                      json[quiz].a;
+                    html+= `                </label>
+                                        </div>
+                                        <div class="`+(json[quiz].type == "checkbox" ? json[quiz].id : "" )+` form-check">
+                                            <input class="form-check-input" type="`+json[quiz].type+`" `+(json[quiz].type == "radio" ? 'name="flexRadio"' : 'value=""' )+` id="flex`+json[quiz].shotType+`1-2">
+                                            <label class="form-check-label" for="flex`+json[quiz].shotType+`1-2">`;
+                    html+=                      json[quiz].b;
+                    html+= `                </label>
+                                    </div>
+                                    <div class="`+(json[quiz].type == "checkbox" ? json[quiz].id : "" )+` form-check">
+                                        <input class="form-check-input"  type="`+json[quiz].type+`" `+(json[quiz].type == "radio" ? 'name="flexRadio"' : 'value=""' )+` id="flex`+json[quiz].shotType+`1-3">
+                                            <label class="form-check-label" for="flex`+json[quiz].shotType+`1-3">`;
+                    html+=                      json[quiz].c;                                            
+                    html+= `                </label>
+                                    </div>
+                                    <div class="`+(json[quiz].type == "checkbox" ? json[quiz].id : "" )+` form-check">
+                                        <input class="form-check-input"  type="`+json[quiz].type+`" `+(json[quiz].type == "radio" ? 'name="flexRadio"' : 'value=""' )+` id="flex`+json[quiz].shotType+`1-4">
+                                        <label class="form-check-label" for="flex`+json[quiz].shotType+`1-4">`;
+                    html+=                      json[quiz].d;                                            
+                    html+= `            </label>
+                                    </div>
+                                </div>
+                                <div class="col-12 py-2 mt-4"> <a href="#" class="btn btn__disabled-form text-center cyberpunk glitched">CONFERIR</a></div>
+                                <div class="col-sm-8">`
+                    html+=                      json[quiz].answerExplanation;
+                    html+=`     </div>
+                                <div class="col-sm-4 d-flex align-items-center justify-content-center">
+                                <a href="#" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next" id="btnNext">
+                                    <img src="../../img/seta_direita_ativa.png" alt="Próximo" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
+                    </section>`;                    
+                });
+                console.log(html);
+                $("#questions").html(html);            
+            });                      
+        });
+    </script>
 
 </body>
 

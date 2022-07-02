@@ -4,8 +4,12 @@
     <head>
         <?php 
             include_once '../../lib/head.php';
-            $nomeCurto = (explode(" ", $_SESSION['nomeUsuario']));
-            $nomeCurto = $nomeCurto[0]." ".$nomeCurto[count($nomeCurto) - 1];
+            if(isset($_SESSION['nomeUsuario'])){
+                $nomeCurto = (explode(" ", $_SESSION['nomeUsuario']));
+                $nomeCurto = $nomeCurto[0]." ".$nomeCurto[count($nomeCurto) - 1];
+            }else{                
+                header('Location: ../../index.php');
+            }           
         ?>
     </head>
 
@@ -231,10 +235,10 @@
                                         title="Teaser Trilha de Transformação Digital V1">
                                     </iframe>
                                 </div>
-                                <div class="col-12 py-5 px-2">
+                                <div class="col-12 py-5 px-2" id="subtitle">
                                     <p class="mb-4 animate__animated animate__fadeIn animate__delay-2s">Aperte <kbd class="text-danger">[c]</kbd> para continuar ou clique no botão abaixo._</p>
                                     <div class="col-12 py-2 visually-hidden" id="showBtn"> 
-                                        <a href="../01_aula01/aula01_p01.php" class="btn btn__primary text-center cyberpunk glitched">CONTINUAR</a>
+                                        <a href="#" class="btn btn__primary text-center cyberpunk glitched">CONTINUAR</a>
                                     </div>
                                 </div>
                             </div>
@@ -391,66 +395,121 @@
             <script src="https://player.vimeo.com/api/player.js"></script>
             <script>
                 $(document).ready(function () {
-
-                    // PAREI AQUI -> API DO VIMEO | IMPLEMENTAR USANDO OS EXEMPLOS ABAIXO
-                    // OBS: Lembrar de registrar na sessão até onde o usuário está para poder voltar até onde estava.
-                    var iframe = document.querySelector('iframe');
-                    var player = new Vimeo.Player(iframe);
-
-                    player.on('play', function() {
-                        alert('You have played the video')
-                    });
-                        player.on('ended', function(){
-                        alert('Video play completed');
-                    });
-                    
-                    player.getVideoTitle().then(function(title) {
-                        console.log('title:', title);
-                    });
-
-                    // FIM DO EXEMPLO DA API
-                    
-                    if($("button[data-bs-slide-to='0']").hasClass("active")){
-                        // $("#imgBtnPrev").prop('disabled', true);
-                        $("#imgBtnPrev").hide();
-                        $("#mouse").hide();
-                        $("#mouse2").hide();
-                        $("#aula01-02").hide();
-                        $("#aula01-03").hide();
-                        $("#aula01-04").hide();
-                        $("#aula01-05").hide();
-                    }                   
-
-                    $("#imgBtnPrev").click(function (e) {
-                        e.stopPropagation();
-                        e.preventDefault();
-
-                        $("#imgBtnNext").show();
-                        if($("button[data-bs-slide-to='0']").hasClass("active")){                            
-                            $("#imgBtnPrev").hide()
-                        }else{
-                            $("#imgBtnPrev").show()
-                        }                       
-                    });
-
-                    $("#imgBtnNext").click(function (e) {
-                        e.stopPropagation();
-                        e.preventDefault();
-                                
-                        $("#imgBtnPrev").show();
-                        if($("button[data-bs-slide-to='6']").hasClass("active")){
-                            $("#imgBtnNext").hide();
-                            $("#mouse").show();
-                            $("#aula01-02").show();
-                            $("#mouse").get(0).scrollIntoView();
-
-                        }else{
-                            $("#imgBtnNext").show();
+                    setUserNameSession();
+                    $(document).keypress(function(e) {
+                        if(e.which == 67 || e.which == 99 && getEtapaConcluida("aula01-02") && !getEtapaConcluida("aula01-03")){
+                            // console.log("Pressionou -> ", e.which);
+                            $("#aula01-03, #aula01-04").show();
+                            $("#aula01-03").get(0).scrollIntoView();
                         }
                     });
-                });               
-            </script>
 
+                    $("#showBtn").click(function (e) {
+                        e.stopPropagation();
+                        e.preventDefault();
+                        
+                        if(getEtapaConcluida("aula01-02")){
+                            $("#aula01-03, #aula01-04").show();
+                            $("#aula01-03").get(0).scrollIntoView();
+                        }                        
+                    });
+
+                    // Etapa Caroussel
+                    if(!getEtapaConcluida('aula01-01')){
+                        if($("button[data-bs-slide-to='0']").hasClass("active")){
+                            // $("#imgBtnPrev").prop('disabled', true);
+                            $("#imgBtnPrev").hide();
+                            $("#mouse").hide();
+                            $("#aula01-02").hide();
+                        }
+
+                        $("#imgBtnPrev").click(function (e) {
+                            e.stopPropagation();
+                            e.preventDefault();
+
+                            $("#imgBtnNext").show();
+                            if($("button[data-bs-slide-to='0']").hasClass("active")){                            
+                                $("#imgBtnPrev").hide()
+                            }else{
+                                $("#imgBtnPrev").show()
+                            }                       
+                        });
+
+                        $("#imgBtnNext").click(function (e) {
+                            e.stopPropagation();
+                            e.preventDefault();
+                                    
+                            $("#imgBtnPrev").show();
+                            if($("button[data-bs-slide-to='6']").hasClass("active")){
+                                setEtapaConcluida('aula01-01');
+                                $("#imgBtnNext").hide();
+                                $("#mouse").show();
+                                $("#aula01-02").show();
+                                $("#mouse").get(0).scrollIntoView();
+
+                            }else{
+                                $("#imgBtnNext").show();
+                            }
+                        });
+                    }
+                    
+                    // Etapa Video
+                    if(!getEtapaConcluida('aula01-02')){
+                        $("#mouse2").hide();
+                        $("#aula01-03").hide();
+                        $("#subtitle").hide();
+                        
+                        var iframe = document.querySelector('iframe');
+                        var player = new Vimeo.Player(iframe); 
+                        player.on('ended', function(){
+                            setEtapaConcluida('aula01-02');
+                            $("#subtitle").show();
+                            $("#showBtn").removeClass("visually-hidden");                    
+                        });
+                    }else{
+                        $("#mouse2").hide();
+                        $("#subtitle").show();
+                        $("#showBtn").removeClass("visually-hidden");
+                    }
+
+
+                    //  Etapa Baralho
+                    if(!getEtapaConcluida("aula01-03")){
+                        $("#aula01-03, #aula01-04").hide();                     
+                    }else{
+                        console.log("Etapa 3 concluida");
+                        $("#mouse2").show();
+                        $("#aula01-05").show();
+                    }                  
+
+                    // Etapa Quiz
+                    if(!getEtapaConcluida("aula01-03")){
+                        $("#aula01-05").hide();
+                    }
+
+                    // if(clickState == 8){
+                    //     console.log("clickState = ", clickState);
+                    // }
+
+                    // if(!getEtapaConcluida("aula01-05")){
+                    //     $("#aula01-05").hide();
+                    // }                   
+                }); 
+               
+
+                
+                function setEtapaConcluida(pNomeEtapa, pStatus = true){
+                    return sessionStorage.setItem(pNomeEtapa, pStatus);
+                }
+
+                function getEtapaConcluida(pNomeEtapa){
+                    return sessionStorage.getItem(pNomeEtapa);
+                }
+
+                function setUserNameSession(){
+                    return sessionStorage.setItem("userName", "<?php echo $nomeCurto;?>");
+                }
+            </script>
     </body>
 
 </html>
