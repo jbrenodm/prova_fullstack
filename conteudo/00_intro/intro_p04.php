@@ -40,19 +40,6 @@
       </div>
       <?php include_once '../../lib/footer.php'; ?> 
 
-      <script>
-        $(document).ready(function () {
-          // Janela Loading
-          
-          setTimeout(continuar, 8000)
-
-          function continuar() {
-              document.querySelector("#btnContinuarP04").classList.remove('disabled')
-              document.querySelector('#textoSeguranca').innerHTML = `
-              <p><strong>Inicializando treinamento em Segurança da Informação v.2.021</strong><br><span class="text-info">Instalação completa.</span></p>
-              `
-          }
-        });        
-      </script>
+      <script src="../../js/intro_p04.js" ></script>
     </body>
 </html>
